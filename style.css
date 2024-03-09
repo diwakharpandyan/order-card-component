@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+}
+main {
+  max-width: 23rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 25px 20px -5px rgba(108, 113, 255, 0.2);
+}
+@media (max-width: 40rem) {
+  main {
+    max-width: 20rem;
+  }
+}
+.main-text {
+  padding: 2rem;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+.description {
+  text-align: center;
+  font-size: smaller;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.plan-sub-div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan a {
+  font-size: small;
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+}
+.plan a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.plan-rate h5 {
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.plan-rate p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+}
+.plan img {
+  margin-right: 10px;
+  height: 2.5rem;
+}
+.button_order {
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 0.8rem;
+  border: none;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+.button_order:hover {
+  cursor: pointer;
+  background-color: hsl(245, 69%, 62%);
+}
+.button_cancel {
+  border: none;
+  width: 100%;
+  background-color: white;
+  padding: 0.75rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+.button_cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
